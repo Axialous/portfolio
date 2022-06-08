@@ -1,0 +1,320 @@
+*{
+    color: black;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+
+    box-sizing: border-box;
+    text-decoration: none;
+    background: none;
+    appearance: none;
+
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+*:focus {
+    outline: none;
+}
+
+html {
+    background-color: var(--cafe-noir);
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+body > section {
+    position: relative;
+    width: 100vw;
+    flex: none;
+}
+
+::selection {
+    background-color: var(--partie-azur);
+    color: var(--neige);
+}
+
+[info-bulle] {
+    position: relative;
+}
+
+[info-bulle]::before {
+    content: attr(info-bulle);
+    display: none;
+
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    background-color: var(--cafe-noir);
+    border-radius: 3px;
+    color: var(--neige);
+    white-space: nowrap;
+
+    padding: 5px 10px;
+}
+
+[info-bulle]::after {
+    content: "";
+    display: none;
+
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    background: url(../images/fleche-bulle.svg);
+    background-size: contain;
+
+    width: 10px;
+    height: 10px;
+}
+
+[info-bulle]:hover::before,
+[info-bulle]:focus::before,
+[info-bulle]:hover::after,
+[info-bulle]:focus::after {
+    display: block;
+}
+
+.fleche-gauche {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+
+    background: url(../images/precedant.svg) center no-repeat, linear-gradient(to right, var(--semble-cafe-noir), transparent);
+    background-size: contain;
+
+    width: 35px;
+    height: 100%;
+
+    transition: 250ms;
+}
+
+.fleche-gauche:hover {
+    width: 75px;
+}
+
+.fleche-droite {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+
+    background: url(../images/suivant.svg) center no-repeat, linear-gradient(to left, var(--semble-cafe-noir), transparent);
+    background-size: contain;
+
+    width: 35px;
+    height: 100%;
+
+    transition: 250ms;
+}
+
+.fleche-droite:hover {
+    width: 75px;
+}
+
+@media screen and (max-width: 1024px) {
+    .fleche-droite, .fleche-gauche {
+        display: none;
+    }
+}
+
+/* COULEURS */
+
+:root {
+    --azur: hsl(215, 76%, 57%);
+    --autobus-scolaire: hsl(51, 100%, 49%);
+    --Princeton: hsl(26, 100%, 58%);
+    --flamme: hsl(20, 84%, 48%);
+    --chataigne: hsl(17, 56%, 36%);
+    --cedrat: hsl(69, 95%, 33%);
+    --cafe-noir: hsl(318, 8%, 23%);
+    --taupe: hsl(272, 6%, 54%);
+    --loup-de-bois: hsl(38, 8%, 81%);
+    --neige: hsl(315, 100%, 99%);
+
+    --semble-autobus-scolaire: hsla(51, 100%, 49%, 25%);
+    --semble-chataigne: hsla(17, 56%, 36%, 25%);
+    --semble-cafe-noir: hsla(318, 8%, 23%, 25%);
+    --semble-neige: hsla(315, 100%, 99%, 25%);
+
+    --semi-azur: hsla(215, 76%, 57%, 50%);
+    --semi-chataigne: hsla(17, 56%, 36%), 50%;
+    --semi-autobus-scolaire: hsla(51, 100%, 49%, 50%);
+    --semi-cafe-noir: hsla(318, 8%, 23%, 50%);
+    --semi-neige: hsla(315, 100%, 99%, 50%);
+
+    --partie-azur: hsla(215, 76%, 57%, 75%);
+    --partie-Princeton: hsla(26, 100%, 58%, 75%);
+    --partie-flamme: hsla(20, 84%, 48%, 75%);
+    --partie-cedrat: hsla(69, 95%, 33%, 75%);
+    --partie-cafe-noir: hsla(318, 8%, 23%, 75%);
+    --partie-taupe: hsla(272, 6%, 54%, 75%);
+    --partie-loup-de-bois: hsla(38, 8%, 81%, 50%);
+    --partie-neige: hsla(315, 100%, 99%, 75%);
+}
+
+/* POLICES */
+
+@font-face {
+    font-family: 'Aleo';
+    src: url(../polices/Aleo-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Courgette';
+    src: url(../polices/Courgette-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'BlackOpsOne';
+    src: url(../polices/BlackOpsOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Monoton';
+    src: url(../polices/Monoton-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Kodchasan';
+    src: url(../polices/Kodchasan-Regular.ttf);
+}
+
+/* ANIMATIONS */
+
+@keyframes flottement {
+    0% {
+        transform: translate(-50%, 0px);
+    }
+    50% {
+        transform: translate(-50%, 10px);
+    }
+    100% {
+        transform: translate(-50%, 0px);
+    }
+}
+
+@keyframes retournement {
+    to {
+        transform: translateX(-50%) rotateX(-180deg);
+    }
+}
+
+@keyframes flottement-inverse {
+    0% {
+        transform: translate(-50%, 0px) rotateX(-180deg);
+    }
+    50% {
+        transform: translate(-50%, 10px) rotateX(-180deg);
+    }
+    100% {
+        transform: translate(-50%, 0px) rotateX(-180deg);
+    }
+}
+
+@keyframes retournement-inverse {
+    from {
+        transform: translateX(-50%) rotateX(-180deg);
+    }
+}
+
+@keyframes meut {
+    0% {
+        background-position: 0px -6px;
+    }
+    25% {
+        background-position: -3px -3px;
+    }
+    50% {
+        background-position: -6px 0px;
+    }
+    75% {
+        background-position: -3px -3px;
+    }
+    100% {
+        background-position: 0px -6px;
+    }
+}
+
+@keyframes balancement {
+    25% {
+        transform: rotateY(13deg);
+    }
+    75% {
+        transform: rotateY(-13deg);
+    }
+}
+
+@keyframes flash {
+    80% {
+        background-color: var(--partie-flamme);
+    }
+    85% {
+        background-color: var(--semi-autobus-scolaire);
+    }
+    95% {
+        background-color: var(--semi-autobus-scolaire);
+    }
+    100% {
+        background-color: var(--partie-flamme);
+    }
+}
+
+@keyframes eclaircissement {
+    from {
+        background-color: var(--partie-flamme);
+    }
+    to {
+        background-color: var(--partie-neige);
+    }
+}
+
+@keyframes assombrissement {
+    from {
+        background-color: var(--partie-neige);
+    }
+    to {
+        background-color: var(--partie-flamme);
+    }
+}
+
+@keyframes vague-verticale {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes vague-horizontale {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes tapis-roulant-vertical {
+    100% {
+        background-position: 0 360px;
+    }
+}
+
+@keyframes tapis-roulant-horizontal {
+    100% {
+        background-position-x: 360px;
+    }
+}

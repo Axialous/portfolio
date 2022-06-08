@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="60"
+   height="60"
+   viewBox="0 0 15.875 15.875"
+   version="1.1"
+   id="svg7731"
+   sodipodi:docname="suivant.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7733"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="8"
+     inkscape:cx="14.5625"
+     inkscape:cy="34.375"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs7728" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path844-0"
+       style="fill:#fffafe;fill-opacity:1;stroke-width:1.88976"
+       d="M 23.025391 0.00390625 A 1.2500083 1.2499811 0 0 0 22.232422 0.375 A 1.2500083 1.2499811 0 0 0 21.882812 1.25 L 21.875 1.25 L 21.875 28.75 L 21.875 31.25 L 21.875 58.748047 L 21.882812 58.748047 A 1.2500083 1.2499811 0 0 0 22.244141 59.634766 A 1.2500083 1.2499811 0 0 0 24.009766 59.632812 L 24.021484 59.621094 L 37.765625 45.878906 A 1.2500083 1.2499811 0 0 0 38.125 45.041016 A 1.2500083 1.2499811 0 0 0 37.755859 44.113281 A 1.2500083 1.2499811 0 0 0 37.732422 44.091797 L 36.875 43.234375 L 24.375 30.732422 C 24.01113 30.368499 24.008983 29.634426 24.375 29.269531 L 36.777344 16.867188 C 36.801246 16.842261 36.873047 16.767578 36.873047 16.767578 L 36.873047 16.771484 L 37.765625 15.878906 A 1.2500083 1.2499811 0 0 0 38.125 15.041016 A 1.2500083 1.2499811 0 0 0 37.755859 14.113281 A 1.2500083 1.2499811 0 0 0 37.732422 14.091797 L 24.009766 0.3671875 L 23.998047 0.35546875 A 1.2500083 1.2499811 0 0 0 23.25 0.005859375 A 1.2500083 1.2499811 0 0 0 23.025391 0.00390625 z M 24.375 4.2675781 L 35.107422 15 L 24.375 25.734375 L 24.375 4.2675781 z M 24.375 34.267578 L 35.107422 45 L 24.375 55.732422 L 24.375 34.267578 z "
+       transform="scale(0.26458333)" />
+  </g>
+</svg>

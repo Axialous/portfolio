@@ -1,0 +1,312 @@
+#presentation {
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url(../../images/ciel-orangé.jpg);
+    background-size: auto 106vh;
+
+    animation: meut linear 15000ms infinite;
+}
+
+#presentation article {
+    width: 47%;
+
+    transition: 250ms;
+}
+
+#presentation article > * {
+    text-align: center;
+    text-shadow: 0 0 3px var(--chataigne);
+
+    margin: 25px 0;
+}
+
+#presentation article h1 {
+    font-family: 'Monoton', sans-serif;
+    font-size: 70px;
+    color: var(--cafe-noir);
+
+    animation: balancement linear 13000ms infinite;
+}
+
+#presentation article p {
+    position: relative;
+
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 55px;
+    color: var(--neige);
+
+    transition: 250ms;
+}
+
+#presentation article p span {
+    color: inherit;
+
+    transition: 500ms;
+}
+
+#presentation article p:hover span {
+    display: inline-block;
+}
+
+#presentation article p:hover .lettre-1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(calc(-50% - 141px), 100px);
+}
+
+#presentation article p:hover .lettre-2 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(calc(-50% - 91px), 100px);
+}
+
+#presentation article p:hover .lettre-3 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(calc(-50% - 51px), 100px);
+}
+
+#presentation article p:hover .lettre-4 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 25px;
+    transform: translate(calc(-50% - 14px), 110px) rotate(180deg);
+}
+
+#presentation article p:hover .lettre-5 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(calc(-50% + 31px), 100px);
+}
+
+#presentation article p:hover .lettre-6 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(calc(-50% + 65px), 100px);
+}
+
+#presentation article p:hover .lettre-7 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(calc(-50% + 87px), 100px);
+}
+
+#presentation article p:hover .lettre-8 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(calc(-50% + 107px), 100px);
+}
+
+#presentation article p:hover .lettre-9 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(calc(-50% + 141px), 100px);
+}
+
+.nuage {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--partie-flamme);
+    box-shadow: 0 0 5px 5px var(--partie-neige);
+
+    width: 100px;
+    height: 100px;
+
+    animation: assombrissement 500ms, flash 6000ms infinite;
+    transition: 500ms;
+}
+
+.nuages-hauts .nuage {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.nuages-bas .nuage {
+    transform: translate(50%, 50%) rotate(45deg);
+}
+
+.nuage:hover {
+    background-color: var(--partie-neige);
+
+    animation: eclaircissement 500ms;
+}
+
+.nuage * {
+    font-family: arial;
+    font-size: 20px;
+    color: var(--chataigne);
+    text-align: center;
+
+    transform: rotate(-45deg);
+    opacity: 0;
+
+    transition: 500ms;
+}
+
+.nuage:hover * {
+    opacity: 1;
+}
+
+#presentation .nuages-hauts .nuage:nth-child(1) {
+    left: 100px;
+    top: 0px;
+}
+
+#presentation .nuages-hauts .nuage:nth-child(2) {
+    left: 300px;
+    top: 0px;
+}
+
+#presentation .nuages-hauts .nuage:nth-child(3) {
+    left: 500px;
+    top: 0px;
+}
+
+#presentation .nuages-hauts .nuage:nth-child(4) {
+    left: 0px;
+    top: 100px;
+}
+
+#presentation .nuages-hauts .nuage:nth-child(5) {
+    left: 200px;
+    top: 100px;
+}
+
+#presentation .nuages-hauts .nuage:nth-child(6) {
+    left: 300px;
+    top: 200px;
+}
+
+#presentation .nuages-hauts .nuage:nth-child(7) {
+    left: 0px;
+    top: 300px;
+}
+
+#presentation .nuages-hauts .nuage:nth-child(8) {
+    left: 200px;
+    top: 300px;
+}
+
+#presentation .nuages-hauts .nuage:nth-child(9) {
+    left: 100px;
+    top: 400px;
+}
+
+#presentation .nuages-hauts .nuage:nth-child(10) {
+    left: 200px;
+    top: 500px;
+}
+
+#presentation .nuages-bas .nuage:nth-child(1) {
+    right: 400px;
+    bottom: 300px;
+}
+
+#presentation .nuages-bas .nuage:nth-child(2) {
+    right: 100px;
+    bottom: 200px;
+}
+
+#presentation .nuages-bas .nuage:nth-child(3) {
+    right: 0px;
+    bottom: 100px;
+}
+
+#presentation .nuages-bas .nuage:nth-child(4) {
+    right: 100px;
+    bottom: 0px;
+}
+
+@media screen and (max-width: 1500px) {
+    #presentation .nuages-bas .nuage:nth-child(1) {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #presentation .nuages-hauts .nuage:nth-child(6) {
+        opacity: 0;
+    }
+
+    #presentation article {
+        width: 67%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #presentation .nuages-hauts .nuage:nth-child(3) {
+        opacity: 0;
+    }
+
+    #presentation .nuages-hauts .nuage:nth-child(10) {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #presentation .nuages-hauts .nuage:nth-child(8) {
+        opacity: 0;
+    }
+    
+    #presentation article h1 {
+        font-size: 55px;
+    }
+    
+    #presentation article p {
+        font-size: 40px;
+    }
+
+    #presentation article {
+        width: 87%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #presentation .nuages-hauts .nuage:nth-child(9) {
+        opacity: 0;
+    }
+    
+    #presentation .nuages-bas .nuage:nth-child(2) {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #presentation .nuages-hauts .nuage:nth-child(2) {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #presentation .nuages-hauts .nuage:nth-child(7) {
+        opacity: 0;
+    }
+
+    #presentation article h1 {
+        font-size: 40px;
+    }
+
+    #presentation article p {
+        font-size: 25px;
+    }
+}

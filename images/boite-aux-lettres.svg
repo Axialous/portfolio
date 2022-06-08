@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="60"
+   height="35"
+   viewBox="0 0 15.875 9.2604167"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="boite-aux-lettres.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     height="30px"
+     inkscape:zoom="9.2791246"
+     inkscape:cx="19.452266"
+     inkscape:cy="29.205341"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect290-2"
+       style="fill:#8a8390;fill-opacity:0.5;stroke-width:0.690297;stroke:#3f363c;stroke-opacity:1"
+       d="M 8 5 C 6.3380004 5 5 8.345 5 12.5 L 5 20 L 8 20 L 52 20 L 55 20 L 55 12.5 C 55 8.345 53.662 5 52 5 L 8 5 z "
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:#89818f;fill-opacity:1;stroke:#3f363c;stroke-width:0.204945px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 1.3229166,3.96875 0.52916663,5.55625 H 15.345834 l -0.79375,-1.5875 z"
+       id="path917" />
+  </g>
+</svg>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <title>Document</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style/general.css">
+        <link rel="stylesheet" href="style/sections/en-tete.css">
+        <link rel="stylesheet" href="style/sections/presentation.css">
+        <link rel="stylesheet" href="style/sections/competences.css">
+        <link rel="stylesheet" href="style/sections/projets.css">
+        <link rel="stylesheet" href="style/sections/contact.css">
+    </head>
+
+    <body>
+        <header>
+            <input type="checkbox">
+            <nav>
+                <a onclick="ferme_menu()" href="#presentation">Présentation</a>
+                <a onclick="ferme_menu()" href="#competences">Compétences</a>
+                <a onclick="ferme_menu()" href="#projets">Projets</a>
+                <a onclick="ferme_menu()" href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section id="presentation">
+            <article>
+                <h1>Alexis Bonnet</h1>
+                <p>Déve<span class="lettre-7">l</span>opp<span class="lettre-9">e</span>u<span class="lettre-3">r</span> W<span class="lettre-2">e</span>b <span class="lettre-5">e</span>t <span class="lettre-4">W</span>eb <span class="lettre-1">m</span>ob<span class="lettre-6">i</span><span class="lettre-8">l</span>e</p>
+            </article>
+            <div class="nuages-hauts">
+                <div class="nuage"></div>
+                <div class="nuage"></div>
+                <div class="nuage"></div>
+                <div class="nuage"></div>
+                <div class="nuage"><p>HTML & CSS</p></div>
+                <div class="nuage"><img src="images/double-obele.svg" alt="Double obèle" width="60"></div>
+                <div class="nuage"></div>
+                <div class="nuage"><p>JavaScript</p></div>
+                <div class="nuage"><p>Python</p></div>
+                <div class="nuage"><p>PHP & SQL</p></div>
+            </div>
+            <div class="nuages-bas">
+                <div class="nuage"><img src="images/brique.svg" alt="Brique"></div>
+                <div class="nuage"><img src="images/croche-pointee-double.svg" alt="Croche pointée double"></div>
+                <div class="nuage"></div>
+                <div class="nuage"></div>
+            </div>
+            <a onclick="ferme_menu()" class="fleche-droite" href="#competences"></a>
+        </section>
+        
+        <section id="competences">
+            <a onclick="ferme_menu()" class="fleche-gauche" href="#presentation"></a>
+            <h1>Compétences</h1>
+            <article>
+                <section class="categorie-competences">
+                    <h1>Développement</h1>
+                    <div>
+                        <div info-bulle="HTML"><img src="images/logos/html.svg" alt="HTML"></div>
+                        <div info-bulle="JavaScript"><img src="images/logos/javascript.svg" alt="JavaScript"></div>
+                        <div info-bulle="AJAX"><img src="images/logos/ajax.svg" alt="AJAX"></div>
+                        <div info-bulle="PHP"><img src="images/logos/php.svg" alt="PHP"></div>
+                        <div info-bulle="SQL"><img src="images/logos/sql.svg" alt="SQL"></div>
+                    </div>
+                </section>
+                <section class="categorie-competences">
+                    <h1>Stylique</h1>
+                    <div>
+                        <div info-bulle="CSS"><img src="images/logos/css.svg" alt="CSS"></div>
+                        <div info-bulle="Adobe Illustrator"><img src="images/logos/adobe-illustrator.svg" alt="Adobe illustrator"></div>
+                        <div info-bulle="Inkscape"><img src="images/logos/inkscape.svg" alt="Inkscape"></div>
+                        <div info-bulle="Bootstrap"><img src="images/logos/bootstrap.svg" alt="Bootstrap"></div>
+                    </div>
+                </section>
+                <section class="categorie-competences">
+                    <h1>Organisation</h1>
+                    <div>
+                        <div info-bulle="Visual Studio Code"><img src="images/logos/visual-studio-code.svg" alt="Visual Studio Code"></div>
+                        <div info-bulle="Git"><img src="images/logos/git.svg" alt="Git"></div>
+                        <div info-bulle="GitHub"><img src="images/logos/github.svg" alt="GitHub"></div>
+                        <div info-bulle="Laragon"><img src="images/logos/laragon.svg" alt="Laragon"></div>
+                    </div>
+                </section>
+            </article>
+            <nav>
+                <input type="radio" name="categorie-competences" onclick="defiler(1)" checked>
+                <input type="radio" name="categorie-competences" onclick="defiler(2)">
+                <input type="radio" name="categorie-competences" onclick="defiler(3)">
+            </nav>
+            <a onclick="ferme_menu()" class="fleche-droite" href="#projets"></a>
+        </section>
+
+        <section id="projets">
+            <a onclick="ferme_menu()" class="fleche-gauche" href="#competences"></a>
+            <article>
+                <h1>Mes projets</h1>
+                <div>
+                    <figure onmouseenter="modifier_couleur(10, 1)" onmouseleave="modifier_couleur(215, 1)" style="background-image: url(images/projets/jadoo.jpeg);">
+                        <figcaption><h1>Jadoo</h1></figcaption>
+                        <input onclick="ouvrir(1)" type="checkbox">
+                        <div>
+                            <section class="description-projet">
+                                <h1>Jadoo</h1>
+                                <h2>Reproduction de maquette</h2>
+                            </section>
+                            <section class="illustration-projet">
+                                <iframe src="https://monsieurthe5.github.io/jadoo/">
+                                    <title>Jadoo</title>
+                                </iframe>
+                            </section>
+                            <section class="competences-projet">
+                                <div info-bulle="HTML"><img src="images/logos/html.svg" alt="HTML"></div>
+                                <div info-bulle="CSS"><img src="images/logos/css.svg" alt="CSS"></div>
+                                <div info-bulle="Git"><img src="images/logos/git.svg" alt="Git"></div>
+                                <div info-bulle="GitHub"><img src="images/logos/github.svg" alt="GitHub"></div>
+                            </section>
+                        </div>
+                    </figure>
+
+                    <figure onmouseenter="modifier_couleur(34, 2)" onmouseleave="modifier_couleur(215, 2)" style="background-image: url(images/projets/quixo.jpeg);">
+                        <figcaption><h1>Quixo</h1></figcaption>
+                        <input onclick="ouvrir(2)" type="checkbox">
+                        <div>
+                            <section class="description-projet">
+                                <h1>Quixo</h1>
+                                <h2>Reproduction d'un jeu de société</h2>
+                            </section>
+                            <section class="illustration-projet">
+                                <iframe src="https://monsieurthe5.github.io/quixo/">
+                                    <title>Quixo</title>
+                                </iframe>
+                            </section>
+                            <section class="competences-projet">
+                                <div info-bulle="HTML"><img src="images/logos/html.svg" alt="HTML"></div>
+                                <div info-bulle="CSS"><img src="images/logos/css.svg" alt="CSS"></div>
+                                <div info-bulle="JavaScript"><img src="images/logos/javascript.svg" alt="JavaScript"></div>
+                                <div info-bulle="Git"><img src="images/logos/git.svg" alt="Git"></div>
+                                <div info-bulle="GitHub"><img src="images/logos/github.svg" alt="GitHub"></div>
+                            </section>
+                        </div>
+                    </figure>
+
+                    <figure onmouseenter="modifier_couleur(199, 3)" onmouseleave="modifier_couleur(215, 3)" style="background-image: url(images/projets/travelerslife.jpeg);">
+                        <figcaption><h1>Traveler's life</h1></figcaption>
+                        <input onclick="ouvrir(3)" type="checkbox">
+                        <div>
+                            <section class="description-projet">
+                                <h1>Traveler's life</h1>
+                                <h2>Création d'un site d'agence de voyage</h2>
+                            </section>
+                            <section class="illustration-projet">
+                                <iframe src="https://monsieurthe5.github.io/travelerslife/">
+                                    <title>Traveler's life</title>
+                                </iframe>
+                            </section>
+                            <section class="competences-projet">
+                                <div info-bulle="HTML"><img src="images/logos/html.svg" alt="HTML"></div>
+                                <div info-bulle="CSS"><img src="images/logos/css.svg" alt="CSS"></div>
+                                <div info-bulle="JavaScript"><img src="images/logos/javascript.svg" alt="JavaScript"></div>
+                                <div info-bulle="Git"><img src="images/logos/git.svg" alt="Git"></div>
+                                <div info-bulle="GitHub"><img src="images/logos/github.svg" alt="GitHub"></div>
+                            </section>
+                        </div>
+                    </figure>
+
+                    <figure onmouseenter="modifier_couleur(281, 4)" onmouseleave="modifier_couleur(215, 4)" style="background-image: url(images/projets/quoridor.jpeg);">
+                        <figcaption><h1>Quoridor</h1></figcaption>
+                        <input onclick="ouvrir(4)" type="checkbox">
+                        <div>
+                            <section class="description-projet">
+                                <h1>Quoridor</h1>
+                                <h2>Reproduction d'un jeu de société</h2>
+                            </section>
+                            <section class="illustration-projet">
+                                <iframe src="https://monsieurthe5.github.io/quoridor/">
+                                    <title>Quoridor</title>
+                                </iframe>
+                            </section>
+                            <section class="competences-projet">
+                                <div info-bulle="HTML"><img src="images/logos/html.svg" alt="HTML"></div>
+                                <div info-bulle="CSS"><img src="images/logos/css.svg" alt="CSS"></div>
+                                <div info-bulle="JavaScript"><img src="images/logos/javascript.svg" alt="JavaScript"></div>
+                                <div info-bulle="Git"><img src="images/logos/git.svg" alt="Git"></div>
+                                <div info-bulle="GitHub"><img src="images/logos/github.svg" alt="GitHub"></div>
+                            </section>
+                        </div>
+                    </figure>
+
+                    <figure onmouseenter="modifier_couleur(353, 5)" onmouseleave="modifier_couleur(215, 5)" style="background-image: url(images/projets/note.jpeg);">
+                        <figcaption><h1>Note</h1></figcaption>
+                        <input onclick="ouvrir(5)" type="checkbox">
+                        <div>
+                            <section class="description-projet">
+                                <h1>Note</h1>
+                                <h2>Création d'un site catalogue</h2>
+                            </section>
+                            <section class="illustration-projet">
+                                <img src="images/projets/illustration_note.jpeg" alt="Note">
+                            </section>
+                            <section class="competences-projet">
+                                <div info-bulle="HTML"><img src="images/logos/html.svg" alt="HTML"></div>
+                                <div info-bulle="CSS"><img src="images/logos/css.svg" alt="CSS"></div>
+                                <div info-bulle="Bootstrap"><img src="images/logos/bootstrap.svg" alt="Bootstrap"></div>
+                                <div info-bulle="JavaScript"><img src="images/logos/javascript.svg" alt="JavaScript"></div>
+                                <div info-bulle="AJAX"><img src="images/logos/ajax.svg" alt="AJAX"></div>
+                                <div info-bulle="PHP"><img src="images/logos/php.svg" alt="PHP"></div>
+                                <div info-bulle="SQL"><img src="images/logos/sql.svg" alt="SQL"></div>
+                                <div info-bulle="Git"><img src="images/logos/git.svg" alt="Git"></div>
+                                <div info-bulle="GitHub"><img src="images/logos/github.svg" alt="GitHub"></div>
+                            </section>
+                        </div>
+                    </figure>
+
+                    <figure style="display: none;" onmouseenter="modifier_couleur(XXX, 6)" onmouseleave="modifier_couleur(215, 6)" style="background-image: url(images/projets/XXX);">
+                        <figcaption><h1>Titre</h1></figcaption>
+                        <input onclick="ouvrir(6)" type="checkbox">
+                        <div>
+                            <section class="description-projet">
+                                <h1>Titre</h1>
+                                <h2>Intitulé</h2>
+                            </section>
+                            <section class="illustration-projet">
+                                <iframe src="XXX">
+                                    <title>Titre</title>
+                                </iframe>
+                            </section>
+                            <section class="competences-projet">
+
+                            </section>
+                        </div>
+                    </figure>
+                </div>
+            </article>
+            <div class="verticale">
+                <div class="vague"></div>
+                <div class="vague"></div>
+                <div class="vague"></div>
+                <div class="vague"></div>
+                <div class="vague"></div>
+                <div class="vague"></div>
+                <div class="vague"></div>
+                <div class="vague"></div>
+                <div class="vague"></div>
+                <div class="vague"></div>
+            </div>
+            <div class="horizontale">
+                <div class="vague"></div>
+                <div class="vague"></div>
+                <div class="vague"></div>
+                <div class="vague"></div>
+                <div class="vague"></div>
+            </div>
+            <a onclick="ferme_menu()" class="fleche-droite" href="#contact"></a>
+        </section>
+
+        <section id="contact">
+            <a onclick="ferme_menu()" class="fleche-gauche" href="#projets"></a>
+            <article>
+                <h1>Contact</h1>
+                <form id="formulaire" action="" method="post">
+                    <div>
+                        <input type="text" name="nom" placeholder="Nom" required>
+                        <input type="email" name="mail" placeholder="Adresse mail" required>
+                        <input type="text" name="objet" placeholder="Objet" required>
+                        <textarea name="message" placeholder="Message" required></textarea>
+                    </div>
+                    <button onmouseenter="envoyer()" onmouseleave="devoyer()" onfocus="envoyer()" onblur="devoyer()" type="submit">Envoyer</button>
+                </form>
+            </article>
+            <nav>
+                <a info-bulle="GitHub | Alexis Bonnet" href="https://github.com/MonsieurThe5"><img src="images/logos/github.svg" alt=""></a>
+                <a info-bulle="CV | Alexis Bonnet" href=""><img src="images/logos/cv.svg" alt=""></a>
+            </nav>
+            </section>
+
+    </body>
+
+    <script type="text/javascript" src="script/fishing.js"></script>
+
+</html>

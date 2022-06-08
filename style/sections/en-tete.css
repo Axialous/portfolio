@@ -1,0 +1,81 @@
+header {
+    position: fixed;
+    z-index: 10;
+
+    background-color: var(--partie-taupe);
+    box-shadow: 0 0 5px 5px var(--partie-taupe);
+
+    width: 100vw;
+}
+
+header > input {
+    position: absolute;
+    z-index: 10;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: url(../../images/menu.svg), radial-gradient(var(--semble-neige), transparent 80%);
+    background-size: contain;
+
+    width: 60px;
+    height: 60px;
+
+    animation: retournement-inverse linear 1000ms, flottement linear 3000ms infinite 1000ms;
+    cursor: pointer;
+}
+
+header > input:checked {
+    animation: retournement linear 1000ms, flottement-inverse linear 3000ms infinite 1000ms;
+}
+
+header > nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    overflow: hidden;
+
+    height: 0;
+
+    transition: 250ms;
+}
+
+header > input:checked + nav {
+    height: 100px;
+}
+
+header a {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 20px;
+    color: var(--neige);
+
+    margin: auto;
+
+    transition: 250ms;
+}
+
+header a:hover {
+    color: var(--autobus-scolaire);
+}
+
+@media screen and (max-width: 600px) {
+    header > nav {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header > input:checked + nav {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header > nav {
+        grid-template-columns: 1fr;
+        width: min-content;
+        margin: auto;
+    }
+
+    header > input:checked + nav {
+        height: 250px;
+    }
+}

@@ -1,0 +1,184 @@
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url(../../images/fond-enveloppes.svg) 0 0 repeat, var(--partie-Princeton);
+
+    min-width: 50vw;
+    width: auto;
+    max-width: 100vw;
+
+    animation: tapis-roulant-horizontal linear 30000ms infinite;
+}
+
+#contact article {
+    display: flex;
+
+    background-color: var(--partie-neige);
+    border-radius: 111px 1px 1px 1px;
+    box-shadow: 0 0 3px 3px var(--partie-neige);
+
+    width: min(90vw, 700px);
+    height: 60%;
+
+    margin: 25px;
+}
+
+#contact article > h1 {
+    font-family: 'Monoton', sans-serif;
+    font-size: 50px;
+    color: var(--flamme);
+    writing-mode: vertical-rl;
+
+    margin: 15px 0;
+
+    transform: rotate(180deg);
+
+    transition: 250ms;
+}
+
+#formulaire {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+#formulaire > div {
+    position: relative;
+    z-index: 6;
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    transition: 500ms;
+}
+
+#formulaire input {
+    border-radius: 10px 10px 0 0;
+    border-bottom: solid 2px var(--autobus-scolaire);
+
+    color: var(--cafe-noir);
+
+    padding: 5px 5px 0;
+    margin: 25px 25px 0;
+
+    transition: 250ms;
+}
+
+#formulaire textarea {
+    flex-grow: 1;
+
+    border-radius: 10px;
+    border: solid 2px var(--autobus-scolaire);
+    resize: none;
+
+    color: var(--cafe-noir);
+
+    padding: 5px 5px 0;
+    margin: 25px;
+
+    transition: 250ms;
+}
+
+#formulaire button {
+    position: relative;
+
+    background: var(--Princeton);
+    border-radius: 3px;
+
+    color: var(--neige);
+
+    padding: 15px;
+    margin: 0 auto 25px;
+
+    width: min-content;
+    height: 48px;
+
+    transition: 250ms;
+
+    cursor: pointer;
+}
+
+#formulaire button:hover, #formulaire button:focus {
+    background: url(../../images/boite-aux-lettres.svg) top no-repeat, var(--Princeton);
+    background-size: contain;
+    border: solid 2px var(--cafe-noir);
+    border-radius: 15px 15px 3px 3px / 25px 25px 3px 3px;
+
+    transform: scale(111%);
+
+    height: 100px;
+}
+
+*::placeholder {
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: Arial, sans-serif;
+    color: var(--flamme);
+}
+
+#formulaire input:hover, #formulaire input:focus, #formulaire textarea:hover, #formulaire textarea:focus {
+    background-color: var(--neige);
+}
+
+#contact nav {
+    display: flex;
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+#contact nav a {
+    display: block;
+
+    font-weight: bolder;
+
+    height: 60px;
+
+    margin: 15px;
+}
+
+#contact nav a img {
+    display: block;
+
+    background-color: var(--partie-neige);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px var(--partie-neige);
+
+    height: 100%;
+
+    padding: 5px;
+
+    transition: 1000ms;
+}
+
+#contact nav a img:hover {
+    transform: rotateY(380deg) rotateX(30deg);
+}
+
+@media screen and (max-width: 1024px) {
+    #contact article {
+        flex-direction: column;
+    }
+
+    #contact article h1 {
+        text-align: right;
+        writing-mode: horizontal-tb;
+
+        margin: 0 15px;
+
+        transform: rotate(0);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #contact article h1 {
+        font-size: 30px;
+    }
+}

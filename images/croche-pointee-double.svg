@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="60"
+   height="60"
+   viewBox="0 0 15.875 15.875"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="croche-pointee-double.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="3.280666"
+     inkscape:cx="-34.596634"
+     inkscape:cy="41.150181"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path31"
+       style="fill:#3f363d;stroke-width:3.77953;fill-opacity:1"
+       d="M 60 0 L 15 7.5 L 12.5 7.9160156 L 12.5 10.416016 L 12.5 46.910156 A 7.5 7.5 0 0 0 7.5253906 45 A 7.5 7.5 0 0 0 0 52.449219 A 7.5 7.5 0 0 0 7.4238281 60 A 7.5 7.5 0 0 0 15 52.601562 L 15 52.5 L 15 10 L 57.5 2.9160156 L 57.5 7.9160156 L 47.5 9.5839844 L 47.5 12.083984 L 57.5 10.416016 L 57.5 39.410156 A 7.5 7.5 0 0 0 52.525391 37.5 A 7.5 7.5 0 0 0 45 44.949219 A 7.5 7.5 0 0 0 52.423828 52.5 A 7.5 7.5 0 0 0 60 45.101562 L 60 45 L 60 10 L 60 7.5 L 60 2.5 L 60 0 z M 24.935547 45.416016 C 23.580696 45.450112 22.5 46.552656 22.5 47.916016 C 22.5 49.301016 23.615 50.416016 25 50.416016 C 26.385 50.416016 27.5 49.301016 27.5 47.916016 C 27.5 46.531016 26.385 45.416016 25 45.416016 C 24.978359 45.416016 24.957052 45.415474 24.935547 45.416016 z "
+       transform="scale(0.26458333)" />
+  </g>
+</svg>

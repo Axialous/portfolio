@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Calque_1"
+   data-name="Calque 1"
+   viewBox="0 0 35.999999 59.999999"
+   version="1.1"
+   sodipodi:docname="double-obele.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   width="36"
+   height="60"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview19"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     units="px"
+     width="36px"
+     height="88.521px"
+     inkscape:zoom="8"
+     inkscape:cx="29.6875"
+     inkscape:cy="33.125"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Calque_1" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#f18532;}.cls-2{fill:#de5815;}.cls-3{fill:#8a8390;}.cls-4{fill:#40363d;}.cls-5{fill:none;stroke:#1d1d1b;stroke-miterlimit:10;}</style>
+  </defs>
+  <title
+     id="title6">Double obèle sur fond carré</title>
+  <polygon
+     class="cls-3"
+     points="56.69,49.6 63.78,56.69 56.69,63.78 49.6,63.78 49.6,70.87 42.52,77.95 42.52,7.09 49.6,14.17 49.6,21.26 56.69,21.26 63.78,28.35 56.69,35.44 49.6,35.44 49.6,49.6 "
+     id="polygon12"
+     transform="matrix(0.8466604,0,0,0.84674005,-18,-6.0033868)" />
+  <polygon
+     class="cls-4"
+     points="28.35,21.26 35.44,21.26 35.44,14.17 42.52,7.09 42.52,77.95 35.44,70.87 35.44,63.78 28.35,63.78 21.26,56.69 28.35,49.6 35.44,49.6 35.44,35.44 28.35,35.44 21.26,28.35 "
+     id="polygon14"
+     transform="matrix(0.8466604,0,0,0.84674005,-18,-6.0033868)" />
+  <line
+     class="cls-5"
+     x1="21.26"
+     y1="56.695332"
+     x2="21.26"
+     y2="56.695332"
+     id="line16"
+     style="stroke-width:1.00004" />
+  <metadata
+     id="metadata91">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Double obèle sur fond carré</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
